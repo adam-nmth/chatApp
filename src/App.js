@@ -9,7 +9,7 @@ import Layout from './Layout';
 
 class App extends React.Component {
   state = {
-    loading: true
+    loading: false
   }
 
   componentWillMount() {
@@ -17,6 +17,7 @@ class App extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    /*
     if(this.props.auth.accessToken !== nextProps.auth.accessToken) {
       fetch('http://localhost:3001/api/personal', {
         method: 'GET',
@@ -39,7 +40,7 @@ class App extends React.Component {
 
           this.setState({ loading: false });
         });
-    }
+    } */
   }
 
   loadAccessToken() {

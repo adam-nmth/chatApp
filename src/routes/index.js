@@ -5,7 +5,8 @@ import {
   Register,
   SinglePoll,
   Polls,
-  CreatePoll
+  CreatePoll,
+  Chat
 } from '../Views';
 
 const LOGIN = "/login"; 
@@ -35,5 +36,9 @@ export default [
   {
     path: '/create_poll',
     component: CreatePoll,
+  },
+  {
+    path: '/chat',
+    component: Chat,
   },
 ];
